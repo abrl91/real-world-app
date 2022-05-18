@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UserModule } from './user/user.module';
-import { ProfileModule } from './profile/profile.module';
-import { TagModule } from './tag/tag.module';
-import { ArticleModule } from './article/article.module';
-import { AuthorModule } from './author/author.module';
-import { PrismaModule } from './prisma/prisma.module';
+import { UserModule } from './modules/user/user.module';
+import { ProfileModule } from './modules/profile/profile.module';
+import { TagModule } from './modules/tag/tag.module';
+import { ArticleModule } from './modules/article/article.module';
+import { AuthorModule } from './modules/author/author.module';
+import { PrismaModule } from './core/prisma/prisma.module';
 
 @Module({
   imports: [UserModule, ProfileModule, TagModule, ArticleModule, AuthorModule, PrismaModule],
